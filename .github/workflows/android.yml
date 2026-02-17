@@ -91,7 +91,7 @@ jobs:
       - name: Package (release), stage
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
         run: cp
-          installdir/build/outputs/apk/release/installdir-release-signed.apk
+          installdir/build/outputs/apk/release/installdir-debug.apk
           dist/pegasus-fe_$(git describe --always)_${{ matrix.name }}.apk
 
       - name: Upload artifact

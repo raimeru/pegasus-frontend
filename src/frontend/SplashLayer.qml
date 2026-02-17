@@ -51,7 +51,7 @@ Rectangle {
         width: logo.width * 0.94
         height: vpx(30)
         radius: vpx(10)
-        color: "#181818"
+        color: "#0e141b"
 
         anchors.top: logo.bottom
         anchors.topMargin: height * 1.0

@@ -20,7 +20,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    color: "#222"
+    color: "black"
     anchors.fill: parent
 
     property real progress: 0

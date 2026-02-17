@@ -63,9 +63,6 @@ jobs:
           --output ${PWD}/installdir
           --android-platform android-30
           --gradle
-          --sign ./aks "${{ secrets.AKS_ALIAS }}"
-          --storepass "${{ secrets.AKS_STOREPASS }}"
-          --keypass "${{ secrets.AKS_KEYPASS }}"
       - name: Package (release), stage
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
         run: cp
